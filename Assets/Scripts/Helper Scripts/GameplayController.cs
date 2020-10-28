@@ -21,6 +21,9 @@ public class GameplayController : MonoBehaviour
     private int zombie_KillCount;
 
     [SerializeField]
+    private GameObject onScreenControls;
+    
+    [SerializeField]
     private GameObject pause_Panel;
 
     [SerializeField]
@@ -143,12 +146,14 @@ public class GameplayController : MonoBehaviour
 
     public void PauseGame()
     {
+        onScreenControls.SetActive(false);
         pause_Panel.SetActive(true);
         Time.timeScale = 0f;
     }    
 
     public void ResumeGame()
     {
+        onScreenControls.SetActive(true);
         pause_Panel.SetActive(false);
         Time.timeScale = 1f;
     }

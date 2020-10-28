@@ -651,6 +651,7 @@ MonoBehaviour:
   - {fileID: 2117916649}
   min_ObstacleDelay: 10
   max_ObstacleDelay: 40
+  onScreenControls: {fileID: 1329483471}
   pause_Panel: {fileID: 1022802492}
   gameOver_Panel: {fileID: 1182418959}
   finalScore_Text: {fileID: 558649378}
@@ -790,6 +791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb09a60abab37a4aacd49aa38081fda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainMenuController: {fileID: 0}
 --- !u!1 &461563532
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,12 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class AnimationEvents : MonoBehaviour
-{
-    public string launchScene;
-
+{   
+    public MainMenuController mainMenuController;
+    
+    private string launchScene;
     private PlayerController playerController;
     private Animator anim;
-    
+
     void Start()
     {
         playerController = GameObject.FindGameObjectWithTag(MyTags.PLAYER_TAG).GetComponent<PlayerController>();
@@ -24,6 +25,6 @@ public class AnimationEvents : MonoBehaviour
 
     void CameraStartGame()
     {
-        SceneManager.LoadScene(launchScene);
+        mainMenuController.LaunchScene();
     }
 }
